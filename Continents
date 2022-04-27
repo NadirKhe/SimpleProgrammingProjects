@@ -1,7 +1,7 @@
 /*
   Author: Nadir Kheiralla
-  Java program that informs the user the biggest city in the continent.
-  Practice Program for useing switches.
+  Title: Continents
+  Description: Java program that informs the user the biggest city in the continent. Practice Program for using switches.
 */
 public class Continents {
 
