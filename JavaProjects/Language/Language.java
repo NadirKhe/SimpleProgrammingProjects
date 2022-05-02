@@ -1,7 +1,7 @@
 /*
   Author: Nadir Kheiralla
   Title: Language
-  Description: Basic Java program used for practice on Inheritance and Polymorphism in a language describer application. 
+  Description: Basic Java program used for practice on Inheritance and Polymorphism in a Noodle Shop virtual ordering system.
 */
 public class Language {
   protected String name;
@@ -10,7 +10,8 @@ public class Language {
   protected String wordOrder;
 
  //Constructor
-  public Language(String initialName, int initialNumSpeakers, String initialRegionsSpoken, String initialWordOrder) {
+  public Language(String initialName, int initialNumSpeakers, String 
+  initialRegionsSpoken, String initialWordOrder) {
     name = initialName;
     numSpeakers = initialNumSpeakers;
     regionsSpoken = initialRegionsSpoken;
@@ -19,15 +20,24 @@ public class Language {
 
   //Method to display information on language
   public void getInfo() {
-    System.out.println(name + " is spoken by " + numSpeakers + " people mainly in " + regionsSpoken);
-    System.out.println("The language follows the word order: " + wordOrder);
+    System.out.println(this.name + " is spoken by " + this.numSpeakers + 
+    " people mainly in " + this.regionsSpoken);
+    System.out.println("The language follows the word order: " + 
+    this.wordOrder);
   }
 
   //Main method
   public static void main(String[] args) {
-    Language arabic = new Language("Arabic", 313000000, "Algeria, Bahrain, Chad, Comoros, Djibouti, Egypt, Iraq, Jordan, Kuwait, Lebanon, Libya, Mauritania, Morocco, Oman, Qatar, Saudi Arabia, Somalia, Sudan, Syria, Tunisia, United Arab Emirates, and Yemen.", "verb-subject-object");
-
+    Language arabic = new Language("Arabic", 313000000, "Middle East", 
+    "verb-subject-object"); 
     arabic.getInfo();
-
+    Language achi = new Mayan("Achi", 82600);
+    achi.getInfo();
+    Language kiche = new Mayan("Ki'che'", 2330000);
+    kiche.getInfo();
+    Language mandarin = new SinoTibetan("Mandarin Chinese", 898000000);
+    mandarin.getInfo();
+    Language burmese = new SinoTibetan("Burmese", 36000000);
+    burmese.getInfo();
   }
 }
