@@ -1,7 +1,7 @@
 /*
   Author: Nadir Kheiralla
   Title: Language
-  Description: Basic Java program used for practice on Inheritance and Polymorphism in a Noodle Shop virtual ordering system.
+  Description: Basic Java program used for practice on Inheritance and Polymorphism for retrieving description and information on languages.
 */
 public class Language {
   protected String name;
