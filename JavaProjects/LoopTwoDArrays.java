@@ -1,0 +1,29 @@
+/*
+  Author: Nadir Kheiralla
+  Title: LoopTwoDArrays
+  Description: Basic Java program used for practice on 2D array loop manipulation
+*/
+public class LoopTwoDArrays {
+	public static void main(String[] args) {
+		String[][] wordData = {{"study", "consider", "examine", "learn"}, {"ponder", "read", "think", "cogitate"}};
+    //Using for loop to count the total number of alphabets in matrix
+		int characterCount = 0;
+    for(String[] stringRow : wordData) {
+      for(String s : stringRow) {
+        characterCount+= s.length();
+      }
+    }
+		System.out.println(characterCount);
+
+    //Using while loop to display words and location within Matrix
+		int i = 0, j = 0;
+    while(i < wordData.length) {
+      j = 0;
+      while(j < wordData[i].length) {
+        System.out.println(wordData[i][j] + ": [" + i + "]" + "[" + j + "]");
+        j++;
+      }
+      i++;
+    }
+	}
+}
