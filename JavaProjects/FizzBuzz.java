@@ -1,7 +1,7 @@
 /*
   Author: Nadir Kheiralla
   Title: FizzBuzz Program
-  Description: Basic Java program used for practice on the top programming interview challenge
+  Description: Basic Java program used for practice on one of the top programming interview challenge
 */
 public class FizzBuzz {
 
